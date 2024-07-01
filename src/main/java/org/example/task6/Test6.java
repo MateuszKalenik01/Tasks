@@ -33,7 +33,7 @@ public class Test6 {
     }
 
     public static void generateCombinations(Map<String, Integer> menu, int coins, List<String> items, List<String> currentCombination, int start, List<List<String>> allCombinations) {
-        int currentSum = currentCombination.stream().mapToInt(item -> menu.get(item)).sum();
+        int currentSum = currentCombination.stream().mapToInt(menu::get).sum();
         if (currentSum > coins) {
             return;
         }

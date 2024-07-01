@@ -1,5 +1,5 @@
 package org.example.task3;
-
+//
 import java.util.Stack;
 
 public class StringDecoder {
